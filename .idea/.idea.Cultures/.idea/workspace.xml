@@ -1,7 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="46b7db60-946e-48a3-a391-96b7d205177b" name="Changes" comment="" />
+    <list default="true" id="46b7db60-946e-48a3-a391-96b7d205177b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Cultures/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Cultures/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptables/Amulet of Defence.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptables/Amulet of Defence.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptables/Amulet of Precision.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptables/Amulet of Precision.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptables/Amulet of Stamina.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptables/Amulet of Stamina.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptables/Amulet of Strength.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptables/Amulet of Strength.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptables/Bread.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptables/Bread.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptables/Brick.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptables/Brick.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptables/Cake.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptables/Cake.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptables/Chain Mail.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptables/Chain Mail.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptables/Clay.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptables/Clay.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptables/Coin.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptables/Coin.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptables/Crockery.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptables/Crockery.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptables/Flour.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptables/Flour.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptables/Gold Ingot.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptables/Gold Ingot.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptables/Iron Ingot.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptables/Iron Ingot.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptables/Mead.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptables/Mead.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptables/Stone.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptables/Stone.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptables/Water.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptables/Water.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptables/Wood.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptables/Wood.asset.meta" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,9 +101,12 @@
       <updated>1662107690611</updated>
       <workItem from="1662107700299" duration="17000" />
       <workItem from="1662109800526" duration="1000" />
+      <workItem from="1663572498831" duration="5000" />
+      <workItem from="1663574986670" duration="5000" />
     </task>
     <servers />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />

@@ -9,8 +9,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 144176bfbf03e3f45b6524f18734c46e, type: 3}
+  m_Script: {fileID: 11500000, guid: 35004aa2969557e4ea6cb49f4ed072d5, type: 3}
   m_Name: Stone
   m_EditorClassIdentifier: 
-  resourceName: Stone
-  sprite: {fileID: 0}
+  Name: Stone
+  amount: 10
+  baseModel: {fileID: 2337245942448246833, guid: 48a0b98e1213bd24b9f3ae7cfe2d5687, type: 3}
+  middleModel: {fileID: 4654132319680600361, guid: 0e862bc7da9244f44875b22d81ef5936, type: 3}
+  endModel: {fileID: 7798562317485305, guid: b41a5aad77c8aac4880ea05c5ec71b24, type: 3}
+  itemDrop: {fileID: 11400000, guid: 4185337e1e42aa84690587ff8948a2ed, type: 2}
+  sound:
+  - {fileID: 8300000, guid: 620b47af1460e0044818d771578d7e5c, type: 3}
+  - {fileID: 8300000, guid: 78de98b44558bc24090c75783de0e943, type: 3}
+  - {fileID: 8300000, guid: d158bb1744d2c4e4da34d52e1baf44f4, type: 3}
