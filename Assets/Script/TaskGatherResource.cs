@@ -10,7 +10,7 @@ public class TaskGatherResource : ActionTask
 	{
 		ResourceBehavior behavior = resource.value.GetComponent<ResourceBehavior>();
 		resourceScriptable = behavior.GetResourceScriptable();
-		behavior.RemoveResource();
+		resource.bb.SetVariableValue("resource", behavior.RemoveResource());
 
 		EndAction(true);
 	}

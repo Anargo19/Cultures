@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Clay
   m_EditorClassIdentifier: 
   resourceName: Clay
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 431c31d2a302bc0479bb833c50265b85, type: 3}
+  model: {fileID: 0}

@@ -23,5 +23,11 @@ public class VillagerJob : MonoBehaviour
         
     }
 
+    public void FootR()
+    {
+        Debug.Log("Test");
+        GetComponent<Animator>().SetBool("isCarrying",true);
+    }
+
     
 }

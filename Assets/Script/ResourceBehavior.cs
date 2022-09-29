@@ -11,8 +11,10 @@ public class ResourceBehavior : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log(transform.childCount);
+        if (transform.childCount > 0)
+            Destroy(transform.GetChild(0).gameObject);
         GameObject newResource = Instantiate(resource.baseModel, transform);
-
         _amount = resource.amount;
         _position = transform.position;
 
@@ -30,7 +32,7 @@ public class ResourceBehavior : MonoBehaviour
         return resource;
     }
 
-    public void RemoveResource()
+    public Transform RemoveResource()
     {
         _amount--;
 
@@ -62,6 +64,7 @@ public class ResourceBehavior : MonoBehaviour
         GameObject item = Instantiate(resource.itemDrop.model);
         item.transform.position = pos;
         AudioSource.PlayClipAtPoint(resource.sound[Random.Range(0, resource.sound.Length - 1)], Camera.main.transform.position);
+        return item.transform;
     }
 
     void OnDrawGizmos()
