@@ -63,7 +63,6 @@ public class ResourceBehavior : MonoBehaviour
 
         GameObject item = Instantiate(resource.itemDrop.model);
         item.transform.position = pos;
-        AudioSource.PlayClipAtPoint(resource.sound[Random.Range(0, resource.sound.Length - 1)], Camera.main.transform.position);
         return item.transform;
     }
 

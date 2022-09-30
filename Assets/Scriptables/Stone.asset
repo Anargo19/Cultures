@@ -22,3 +22,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 620b47af1460e0044818d771578d7e5c, type: 3}
   - {fileID: 8300000, guid: 78de98b44558bc24090c75783de0e943, type: 3}
   - {fileID: 8300000, guid: d158bb1744d2c4e4da34d52e1baf44f4, type: 3}
+  storageModels:
+  - {fileID: 6794595655928335657, guid: 5fa595fc84509d44a840a3c95efd81dd, type: 3}
+  - {fileID: 8063382038212019319, guid: 3e3d92c6fc170c34ba75ab9c5449fb0b, type: 3}
+  - {fileID: 6691210585322865505, guid: e0572fc1f426de24482897b51aad9927, type: 3}
+  - {fileID: 935356976643787299, guid: f106f84301453ab4490b79578098d178, type: 3}
+  - {fileID: 3649036817524240453, guid: 1f17d5b2696d6de4283e9325ecc03996, type: 3}

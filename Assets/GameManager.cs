@@ -34,9 +34,13 @@ public class GameManager : MonoBehaviour
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit))
             {
-                if(hit.collider.tag == "Resource")
+                if (hit.collider.tag == "Resource")
                 {
                     Debug.Log("Resource Clicked : " + hit.collider.GetComponentInParent<ResourceBehavior>().GetResourceScriptable().Name);
+                }
+                if (hit.collider.tag == "Storage")
+                {
+                    Debug.Log("Current Stocked : " + hit.collider.GetComponentInParent<FlagBehavior>().GetStorageAmount(hit.collider.transform));
                 }
             }
 

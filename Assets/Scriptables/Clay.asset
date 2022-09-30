@@ -17,8 +17,14 @@ MonoBehaviour:
   baseModel: {fileID: 7635989752227727884, guid: a401f0399bfafb94d97a6faf36e33234, type: 3}
   middleModel: {fileID: 8695332331886180073, guid: 1fb31df93b0f63d49b66eb3125b9a12d, type: 3}
   endModel: {fileID: 8377684584970784234, guid: eb58b5fa4a98fdd449c782bbe633eed6, type: 3}
-  itemDrop: {fileID: 0}
+  itemDrop: {fileID: 11400000, guid: a3289e3dcf441cb4eb52d21ae8576bf9, type: 2}
   sound:
   - {fileID: 8300000, guid: 6a7448c8af7088a44935b34dec3e1b4d, type: 3}
   - {fileID: 8300000, guid: 8ba4f17508d219d42b3548f9b4d7a168, type: 3}
   - {fileID: 8300000, guid: 222c719b04153bf4a8c3d9e7248c0709, type: 3}
+  storageModels:
+  - {fileID: 6794595655928335657, guid: 45567ce9f141e954cae06cde11570696, type: 3}
+  - {fileID: 8063382038212019319, guid: ffed43e48b175ae4b9eb95685ed28a52, type: 3}
+  - {fileID: 6691210585322865505, guid: 2337e5689ac5a154fb20d2c716518920, type: 3}
+  - {fileID: 935356976643787299, guid: 687f89664a41a7b44be3cd55347a5a1b, type: 3}
+  - {fileID: 3649036817524240453, guid: ab9ac28ea7a0f3644a7391dd5967a18e, type: 3}

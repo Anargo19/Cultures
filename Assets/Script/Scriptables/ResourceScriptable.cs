@@ -13,4 +13,5 @@ public class ResourceScriptable : ScriptableObject
     public GameObject endModel;
     public ItemScriptables itemDrop;
     public AudioClip[] sound;
+    public GameObject[] storageModels;
 }
