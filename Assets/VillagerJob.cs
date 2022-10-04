@@ -75,5 +75,10 @@ public class VillagerJob : MonoBehaviour
 
     }
 
+    public void SetJob(Object @object)
+    {
+
+    }
+
 
 }

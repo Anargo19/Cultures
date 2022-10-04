@@ -7,6 +7,7 @@ using static UnityEngine.InputSystem.InputAction;
 public class GameManager : MonoBehaviour
 {
     public InputActionAsset actions;
+    public GameObject villagerActionPanel;
 
     private void OnEnable()
     {
@@ -45,9 +46,34 @@ public class GameManager : MonoBehaviour
             }
 
         }
-            
 
-        
+
+
+    }
+    public void RightClick(CallbackContext callbackContext)
+    {
+        if (callbackContext.performed)
+        {
+            Debug.Log("Left clicked");
+            Vector3 mousePos = Mouse.current.position.ReadValue();
+            Ray ray = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
+            Debug.DrawRay(ray.origin, ray.direction * 100, Color.yellow);
+            RaycastHit hit;
+            if (Physics.Raycast(ray, out hit))
+            {
+                if (hit.collider.tag == "Villager")
+                {
+                    FollowScriptUI follow = villagerActionPanel.GetComponent<FollowScriptUI>();
+                    follow.target = hit.collider.gameObject;
+                    follow.isFollowing = true;
+                }
+                
+            }
+
+        }
+
+
+
     }
 
 }

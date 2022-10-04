@@ -19,6 +19,7 @@ public class FlagBehavior : MonoBehaviour
         foreach(Transform t in transform)
         {
             if(t.tag == "Storage")
+                
                 storagePlaces.Add(t, 0);
 
         }
