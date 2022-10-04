@@ -14,6 +14,7 @@ public class FlagBehavior : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        villager.GetComponent<VillagerJob>().jobChanged.AddListener(ChangeResource);
         resource = villager.GetComponent<VillagerJob>().resourceScriptable;
         resourcePrefabs = resource.storageModels;
         foreach(Transform t in transform)
@@ -64,5 +65,11 @@ public class FlagBehavior : MonoBehaviour
     public int GetStorageAmount(Transform storage)
     {
         return storagePlaces[storage];
+    }
+
+    void ChangeResource()
+    {
+        resource = villager.GetComponent<VillagerJob>().resourceScriptable;
+        resourcePrefabs = resource.storageModels;
     }
 }

@@ -4,10 +4,13 @@ using NodeCanvas.Tasks.Actions;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class VillagerJob : MonoBehaviour
 {
-    [SerializeField] ResourceScriptable _resourceScriptable; 
+    public UnityEvent jobChanged = new UnityEvent();
+    GameManager manager;
+    [SerializeField] ResourceScriptable _resourceScriptable;
     public ResourceScriptable resourceScriptable
     {
         get { return _resourceScriptable; }
@@ -22,13 +25,16 @@ public class VillagerJob : MonoBehaviour
     [SerializeField] Transform pickupTransform;
     [SerializeField] Transform resource;
     int count = 0;
-    [SerializeField] Transform pickaxe;
+    [SerializeField] Transform tool;
+    [SerializeField] Transform toolParent;
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
 
+    }
+    private void Awake()
+    {
+    }
     // Update is called once per frame
     void Update()
     {
@@ -58,7 +64,7 @@ public class VillagerJob : MonoBehaviour
 
     public void StartStopTool()
     {
-        pickaxe.gameObject.SetActive(!pickaxe.gameObject.activeSelf);
+        tool.gameObject.SetActive(!tool.gameObject.activeSelf);
     }
 
     public void Strike()
@@ -75,9 +81,15 @@ public class VillagerJob : MonoBehaviour
 
     }
 
-    public void SetJob(Object @object)
+    public void SetJob(JobScriptable jobScriptable)
     {
-
+        Debug.Log(jobScriptable.name);
+        BehaviourTreeOwner treeOwner = GetComponent<BehaviourTreeOwner>();
+        treeOwner.SwitchBehaviour(jobScriptable.behaviourTree);
+        tool.gameObject.SetActive(false);
+        _resourceScriptable = jobScriptable.resourceNeeded;
+        tool = toolParent.GetChild(jobScriptable.toolIndex);
+        jobChanged.Invoke();
     }
 
 

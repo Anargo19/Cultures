@@ -24,4 +24,11 @@ public class PlayUiSound : MonoBehaviour
         AudioSource.PlayClipAtPoint(clip, Camera.main.transform.position);
     }
 
+    public void SetJob()
+    {
+        GameManager manager = GameManager.instance;
+        manager.selectedVillager.GetComponent<VillagerJob>().SetJob(transform.parent.GetComponent<PopulateJobList>().GetJob(transform.GetSiblingIndex()));
+        
+    }
+
 }
