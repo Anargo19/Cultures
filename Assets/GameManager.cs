@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
     public UnityEvent jobChanged = new UnityEvent();
     public GameObject selectedVillager;
     public static GameManager instance;
+    public BuildingScriptable[] buildingList;
+    public GameObject buildingManager;
 
     private void OnEnable()
     {

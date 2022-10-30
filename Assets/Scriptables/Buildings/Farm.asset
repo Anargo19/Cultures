@@ -18,3 +18,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a3289e3dcf441cb4eb52d21ae8576bf9, type: 2}
   - {fileID: 11400000, guid: d1062b91cbb7db440be91a06e01236da, type: 2}
   - {fileID: 11400000, guid: d1062b91cbb7db440be91a06e01236da, type: 2}
+  constructionStages:
+  - {fileID: 501173561605981266, guid: b363218d4da31974ca72efe6cb5b201f, type: 3}
+  - {fileID: 8243001415570123924, guid: b540a39c65f5c134788d00e3c79dce54, type: 3}

@@ -10,4 +10,5 @@ public class BuildingScriptable : ScriptableObject
     public string name;
     public Sprite sprite;
     public ItemScriptables[] resourcesNeeded;
+    public GameObject[] constructionStages;
 }

@@ -31,4 +31,13 @@ public class PlayUiSound : MonoBehaviour
         
     }
 
+    public void PlaceBuilding()
+    {
+        GameManager manager = GameManager.instance;
+        //BuildingScriptable building =  manager.buildingList[transform.GetSiblingIndex()];
+
+        Instantiate(manager.buildingManager);
+
+    }
+
 }
