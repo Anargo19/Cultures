@@ -10,16 +10,17 @@ public class TaskDetectAvailableResources : ActionTask
     //public BBParameter<Transform> detectedPos;
     protected override void OnExecute()
     {
+        Debug.Log(pos.value);
         HashSet<ItemScriptables> items = new HashSet<ItemScriptables>();
         RaycastHit[] hits = Physics.SphereCastAll(pos.value, 10, Vector3.forward);
         foreach (RaycastHit hit in hits)
         {
-            Transform parent = hit.transform.parent;
-            if (parent == null) continue;
+            Transform colliderTransform = hit.transform;
+            if (colliderTransform == null) continue;
             
-            if (parent.CompareTag("Item"))
+            if (colliderTransform.CompareTag("Item"))
             {
-                ItemDeclaration itemDeclaration = parent.GetComponent<ItemDeclaration>();
+                ItemDeclaration itemDeclaration = colliderTransform.GetComponent<ItemDeclaration>();
                 if (itemDeclaration == null) continue;
                 if (itemDeclaration.item.type == ItemType.Resource)
                 {
@@ -28,7 +29,7 @@ public class TaskDetectAvailableResources : ActionTask
             }
             
         }
-        Debug.Log(hits.Length);
+        Debug.Log(items.Count);
         EndAction(true);
     }
 }

@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="46b7db60-946e-48a3-a391-96b7d205177b" name="Changes" comment="" />
+    <list default="true" id="46b7db60-946e-48a3-a391-96b7d205177b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Cultures/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Cultures/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourTrees/Builder.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BehaviourTrees/Builder.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourTrees/Extractor_Clay.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BehaviourTrees/Extractor_Clay.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourTrees/Extractor_Stone.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BehaviourTrees/Extractor_Stone.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Buildings/FarmStart.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Buildings/FarmStart.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/TaskDetectAvailableResources.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/TaskDetectAvailableResources.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/ItemDeclaration.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/BuidingManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/TaskDetectAvailableResources.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/TaskDetectBuilding.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -78,6 +80,7 @@
       <workItem from="1667499058468" duration="6517000" />
       <workItem from="1667650508403" duration="328000" />
       <workItem from="1667650929538" duration="2855000" />
+      <workItem from="1667669211304" duration="2252000" />
     </task>
     <servers />
   </component>
@@ -100,5 +103,24 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Script/TaskDetectAvailableResources.cs</url>
+          <line>13</line>
+          <properties documentPath="C:\Users\Anargo\Documents\Prototypes_Unity\Cultures\Assets\Script\TaskDetectAvailableResources.cs" initialLine="13" containingFunctionPresentation="method 'OnExecute'">
+            <startOffsets>
+              <option value="331" />
+            </startOffsets>
+            <endOffsets>
+              <option value="388" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
