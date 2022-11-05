@@ -83,7 +83,10 @@ public class ResourceBehavior : MonoBehaviour
         {
             pos = new Vector3(transform.position.x + Random.Range(-3, 3), 0, transform.position.z + Random.Range(-3, 3));
             Debug.Log(isFree);
-            Collider[] hitColliders = Physics.OverlapSphere(pos, 0.5f);
+            int layerMask = 1 << 3; 
+            layerMask = ~layerMask;
+
+            Collider[] hitColliders = Physics.OverlapSphere(pos, 0.5f, layerMask);
             if (hitColliders.Length > 0)
             {
                 isFree = false;

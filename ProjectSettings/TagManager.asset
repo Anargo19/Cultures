@@ -7,11 +7,14 @@ TagManager:
   - Resource
   - Villager
   - Storage
+  - Terrain
+  - ConstructionSite
+  - Item
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Terrain
   - Water
   - UI
   - Resource

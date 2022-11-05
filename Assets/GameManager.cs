@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public BuildingScriptable[] buildingList;
     public GameObject buildingManager;
+    public UnityEvent leftClick;
 
     private void OnEnable()
     {
@@ -40,6 +41,7 @@ public class GameManager : MonoBehaviour
     {
         if (callbackContext.performed)
         {
+            leftClick.Invoke();
             Debug.Log("Left clicked");
             Vector3 mousePos = Mouse.current.position.ReadValue();
             Ray ray = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
