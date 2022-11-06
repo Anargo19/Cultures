@@ -104,11 +104,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 406e06a5dc1d2874d931fd8194b61609, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jobChanged:
+    m_PersistentCalls:
+      m_Calls: []
   _resourceScriptable: {fileID: 11400000, guid: 68eec5355c5fe8a4fbc690e6bb9b4aea, type: 2}
   _flag: {fileID: 0}
   pickupTransform: {fileID: 2328143862573287449}
   resource: {fileID: 8537787063404120742}
-  pickaxe: {fileID: 2328143862573254819}
+  lumber: {fileID: 2328143862573287455}
+  tool: {fileID: 1345709893}
+  toolParent: {fileID: 2328143862573287915}
 --- !u!195 &764593348
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -174,7 +179,7 @@ MonoBehaviour:
   _lockBoundGraphPrefabOverrides: 1
   _preInitializeSubGraphs: 0
   _updateMode: 0
-  _graph: {fileID: 0}
+  _graph: {fileID: 11400000, guid: fe08960d175c5414f84d6407442b2db8, type: 2}
   _blackboard: {fileID: 764593349}
 --- !u!114 &764593353
 MonoBehaviour:
@@ -192,6 +197,37 @@ MonoBehaviour:
   attachLeft: {fileID: 0}
   leftHandPositionWeight: 0
   leftHandRotationWeight: 0
+--- !u!1 &1345709892
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1345709893}
+  m_Layer: 0
+  m_Name: Empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1345709893
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1345709892}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2328143862573287915}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2328143862573000099
 GameObject:
   m_ObjectHideFlags: 0
@@ -244,7 +280,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6c7601037374e0d4aaeb4f27e01bccb1, type: 2}
+  - {fileID: 2100000, guid: be11bb95eeb9f45e2a4ab7d03f51b6a0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -515,14 +551,14 @@ PrefabInstance:
       objectReference: {fileID: 4300002, guid: b794cfa5158947e46bc60a458dc33d5a, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4922c2dc121d3d41ae980ae5c1e2d15, type: 3}
---- !u!4 &2328143862573254819 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4471779756521651227, guid: c4922c2dc121d3d41ae980ae5c1e2d15, type: 3}
-  m_PrefabInstance: {fileID: 2180245233196741816}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2328143862573287449 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4471779756521684129, guid: c4922c2dc121d3d41ae980ae5c1e2d15, type: 3}
+  m_PrefabInstance: {fileID: 2180245233196741816}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2328143862573287455 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4471779756521684135, guid: c4922c2dc121d3d41ae980ae5c1e2d15, type: 3}
   m_PrefabInstance: {fileID: 2180245233196741816}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &2328143862573287809 stripped

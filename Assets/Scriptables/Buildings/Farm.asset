@@ -15,7 +15,6 @@ MonoBehaviour:
   name: Farm
   sprite: {fileID: 0}
   resourcesNeeded:
-  - {fileID: 11400000, guid: a3289e3dcf441cb4eb52d21ae8576bf9, type: 2}
   - {fileID: 11400000, guid: d1062b91cbb7db440be91a06e01236da, type: 2}
   - {fileID: 11400000, guid: d1062b91cbb7db440be91a06e01236da, type: 2}
   constructionStages:

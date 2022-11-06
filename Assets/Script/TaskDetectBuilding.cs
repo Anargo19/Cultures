@@ -1,6 +1,8 @@
 using UnityEngine;
 using NodeCanvas.Framework;
+using ParadoxNotion.Design;
 
+[Category("Anargo")]
 public class TaskDetectBuilding : ActionTask
 {
 
@@ -9,13 +11,13 @@ public class TaskDetectBuilding : ActionTask
     public BBParameter<Transform> detectedPos;
     protected override void OnExecute()
     {
-        RaycastHit[] hits = Physics.SphereCastAll(pos.value, 10, Vector3.forward);
+        RaycastHit[] hits = Physics.SphereCastAll(pos.value, 30, Vector3.forward);
         foreach (RaycastHit hit in hits)
         {
                 if (hit.transform.CompareTag(tag.value))
                 {
                     Debug.Log(hit.transform.position);
-                    detectedPos.bb.SetVariableValue("resource", hit.transform);
+                    detectedPos.bb.SetVariableValue("Building", hit.transform);
                 }
             
         }

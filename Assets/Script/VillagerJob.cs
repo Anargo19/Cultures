@@ -24,9 +24,12 @@ public class VillagerJob : MonoBehaviour
     }
     [SerializeField] Transform pickupTransform;
     [SerializeField] Transform resource;
+    [SerializeField] Transform lumber;
     int count = 0;
     [SerializeField] Transform tool;
     [SerializeField] Transform toolParent;
+
+    [SerializeField] private AudioClip hammerSound;
     // Start is called before the first frame update
     void Start()
     {
@@ -41,24 +44,44 @@ public class VillagerJob : MonoBehaviour
         
     }
 
-    public void Pickup()
+    public void Pickup(string resourceName)
     {
-        GetComponent<Animator>().SetBool("isCarrying", true);
-        if (resource.childCount > 0)
-            Destroy(resource.GetChild(0).gameObject);
-        Transform t = GetComponent<BehaviourTreeOwner>().graph.blackboard.GetVariable<Transform>("resourceDrop").value;
+        if (resourceName != "Lumber")
+        {
+            
+            GetComponent<Animator>().SetBool("isCarrying", true);
+            if (resource.childCount > 0)
+                Destroy(resource.GetChild(0).gameObject);
+            Transform t = GetComponent<BehaviourTreeOwner>().graph.blackboard.GetVariable<Transform>("resourceDrop").value;
 
-        Instantiate(t, resource, false).localPosition = Vector3.zero;
-        resource.gameObject.SetActive(true);
-        if (t != null)
-            Destroy(t.gameObject);
-
+            Instantiate(t, resource, false).localPosition = Vector3.zero;
+            resource.gameObject.SetActive(true);
+            if (t != null)
+                Destroy(t.gameObject);
+            return;
+        }
+        lumber.gameObject.SetActive(true);
+        Transform resourceObj = GetComponent<BehaviourTreeOwner>().graph.blackboard.GetVariable<Transform>("resourcePos").value;
+        
+        if (resourceObj != null)
+            Destroy(resourceObj.gameObject);
     }
-    public void PutDown()
+
+    
+    public void PutDown(string type)
     {
-        GetComponent<Animator>().SetBool("isCarrying", false);
-        resource.gameObject.SetActive(false);
-        flag.GetComponent<FlagBehavior>().ChangeAmount(1);
+        switch(type)
+        {
+            case "Building":
+                lumber.gameObject.SetActive(false);
+                break;
+            default:
+                GetComponent<Animator>().SetBool("isCarrying", false);
+                resource.gameObject.SetActive(false);
+                flag.GetComponent<FlagBehavior>().ChangeAmount(1);
+                break;
+        }
+        
 
     }
 
@@ -67,8 +90,13 @@ public class VillagerJob : MonoBehaviour
         tool.gameObject.SetActive(!tool.gameObject.activeSelf);
     }
 
-    public void Strike()
+    public void Strike(string type)
     {
+        if (type == "Hammer")
+        {
+            AudioSource.PlayClipAtPoint(hammerSound, Camera.main.transform.position);
+            return;
+        }
         count++;
         AudioSource.PlayClipAtPoint(resourceScriptable.sound[Random.Range(0, resourceScriptable.sound.Length - 1)], Camera.main.transform.position);
         if (count < 3)
