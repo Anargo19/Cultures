@@ -11,6 +11,7 @@ public class VillagerJob : MonoBehaviour
     public UnityEvent jobChanged = new UnityEvent();
     GameManager manager;
     [SerializeField] ResourceScriptable _resourceScriptable;
+    [SerializeField] private JobScriptable job;
     public ResourceScriptable resourceScriptable
     {
         get { return _resourceScriptable; }
@@ -25,7 +26,7 @@ public class VillagerJob : MonoBehaviour
     [SerializeField] Transform pickupTransform;
     [SerializeField] Transform resource;
     [SerializeField] Transform lumber;
-    int count = 0;
+    [SerializeField] int count = 0;
     [SerializeField] Transform tool;
     [SerializeField] Transform toolParent;
 
@@ -48,6 +49,18 @@ public class VillagerJob : MonoBehaviour
     {
         if (resourceName != "Lumber")
         {
+            if (job.name == "Builder")
+            {
+                resource.gameObject.SetActive(true);
+                Transform resourceObj = GetComponent<BehaviourTreeOwner>().graph.blackboard.GetVariable<Transform>("resourcePos").value;
+
+                Instantiate(resourceObj, resource, false).localPosition = Vector3.zero;
+                resource.gameObject.SetActive(true);
+                if (resourceObj != null)
+                    Destroy(resourceObj.gameObject);
+                return;
+            }
+            
             
             GetComponent<Animator>().SetBool("isCarrying", true);
             if (resource.childCount > 0)
@@ -61,10 +74,10 @@ public class VillagerJob : MonoBehaviour
             return;
         }
         lumber.gameObject.SetActive(true);
-        Transform resourceObj = GetComponent<BehaviourTreeOwner>().graph.blackboard.GetVariable<Transform>("resourcePos").value;
+        Transform lumberObj = GetComponent<BehaviourTreeOwner>().graph.blackboard.GetVariable<Transform>("resourcePos").value;
         
-        if (resourceObj != null)
-            Destroy(resourceObj.gameObject);
+        if (lumberObj != null)
+            Destroy(lumberObj.gameObject);
     }
 
     
@@ -76,6 +89,12 @@ public class VillagerJob : MonoBehaviour
                 lumber.gameObject.SetActive(false);
                 break;
             default:
+                if (job.name == "Builder")
+                {
+                    
+                    resource.gameObject.SetActive(false);
+                    break;
+                }
                 GetComponent<Animator>().SetBool("isCarrying", false);
                 resource.gameObject.SetActive(false);
                 flag.GetComponent<FlagBehavior>().ChangeAmount(1);
@@ -92,6 +111,7 @@ public class VillagerJob : MonoBehaviour
 
     public void Strike(string type)
     {
+        Debug.Log("Strike!");
         if (type == "Hammer")
         {
             AudioSource.PlayClipAtPoint(hammerSound, Camera.main.transform.position);
@@ -112,6 +132,7 @@ public class VillagerJob : MonoBehaviour
     public void SetJob(JobScriptable jobScriptable)
     {
         Debug.Log(jobScriptable.name);
+        job = jobScriptable;
         BehaviourTreeOwner treeOwner = GetComponent<BehaviourTreeOwner>();
         treeOwner.SwitchBehaviour(jobScriptable.behaviourTree);
         tool.gameObject.SetActive(false);

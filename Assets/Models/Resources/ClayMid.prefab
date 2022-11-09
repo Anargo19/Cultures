@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7514082543140570952}
   - component: {fileID: 211845713724097520}
+  - component: {fileID: -7022608440579385384}
   m_Layer: 0
   m_Name: ClayMid
   m_TagString: Resource
@@ -47,6 +48,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.3039335, y: 0.7187012, z: 1.1382496}
   m_Center: {x: -0.34547693, y: -0.14064941, z: 0.27477098}
+--- !u!208 &-7022608440579385384
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8695332331886180073}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 0
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1001 &4356815253503736215
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54,6 +71,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7514082543140570952}
     m_Modifications:
+    - target: {fileID: 463325534797123945, guid: eb58b5fa4a98fdd449c782bbe633eed6, type: 3}
+      propertyPath: m_Carve
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 463325534797123945, guid: eb58b5fa4a98fdd449c782bbe633eed6, type: 3}
+      propertyPath: m_Shape
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8377684584970784234, guid: eb58b5fa4a98fdd449c782bbe633eed6, type: 3}
       propertyPath: m_Name
       value: stone-oval (2)
@@ -132,6 +157,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7514082543140570952}
     m_Modifications:
+    - target: {fileID: 463325534797123945, guid: eb58b5fa4a98fdd449c782bbe633eed6, type: 3}
+      propertyPath: m_Carve
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 463325534797123945, guid: eb58b5fa4a98fdd449c782bbe633eed6, type: 3}
+      propertyPath: m_Shape
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8377684584970784234, guid: eb58b5fa4a98fdd449c782bbe633eed6, type: 3}
       propertyPath: m_Name
       value: stone-oval

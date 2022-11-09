@@ -17,8 +17,9 @@ MonoBehaviour:
   baseModel: {fileID: 3945890938582673642, guid: 235e6058c9a2d2f4684c36ee8a41494f, type: 3}
   middleModel: {fileID: 3945890938582673642, guid: 235e6058c9a2d2f4684c36ee8a41494f, type: 3}
   endModel: {fileID: 3945890938582673642, guid: 235e6058c9a2d2f4684c36ee8a41494f, type: 3}
-  itemDrop: {fileID: 0}
+  itemDrop: {fileID: 11400000, guid: d1062b91cbb7db440be91a06e01236da, type: 2}
   sound:
   - {fileID: 8300000, guid: 7c867eedf4009d24db93ec5dc0084cb2, type: 3}
   - {fileID: 8300000, guid: 231daf5d654c7884cb3758b561ccc087, type: 3}
   - {fileID: 8300000, guid: e334a3d161508cc4b80f833a303511d9, type: 3}
+  storageModels: []

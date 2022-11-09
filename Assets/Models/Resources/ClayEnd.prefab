@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8377684584967492074}
   - component: {fileID: 8377684584968590122}
   - component: {fileID: 788982988811844685}
+  - component: {fileID: 463325534797123945}
   m_Layer: 0
   m_Name: ClayEnd
   m_TagString: Resource
@@ -97,3 +98,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0350814, y: 0.56773037, z: 0.7121257}
   m_Center: {x: 0.021438373, y: -0.020816399, z: -0.0036673706}
+--- !u!208 &463325534797123945
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8377684584970784234}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 0
+  m_Extents: {x: 0.518, y: 0.284, z: 0.356}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.021000002, y: -0.021000002, z: -0.004}
+  m_TimeToStationary: 0.5

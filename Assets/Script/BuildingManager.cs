@@ -24,9 +24,12 @@ namespace Anargo
             manager = GameManager.instance;
             manager.leftClick.AddListener(Place);
             initial = GetComponent<MeshRenderer>().material;
-            
-            resourcesNeeded = building.resourcesNeeded.ToList();
-            if(!isPlaced)
+            if (isPlaced)
+            {
+                resourcesNeeded = building.resourcesNeeded.ToList();
+                gameObject.tag = "ConstructionSite";
+                return;
+            }
                 InitialPlacementCheck();
         }
 
@@ -60,6 +63,7 @@ namespace Anargo
                 isPlaced = true;
                 GetComponent<MeshRenderer>().material = initial;
                 resourcesNeeded = building.resourcesNeeded.ToList();
+                gameObject.tag = "ConstructionSite";
 
             }
         }
@@ -121,6 +125,8 @@ namespace Anargo
 
         private void OnTriggerEnter(Collider other)
         {
+            if (isPlaced)
+                return;
             if (other.CompareTag("Terrain"))
                 return;
             Material red = GetComponent<MeshRenderer>().material;
@@ -131,6 +137,8 @@ namespace Anargo
 
         private void OnTriggerExit(Collider other)
         {
+            if (isPlaced)
+                return;
             Material red = GetComponent<MeshRenderer>().material;
             red.color = Color.green;
             GetComponent<MeshRenderer>().material = red;

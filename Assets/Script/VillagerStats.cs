@@ -5,6 +5,8 @@ using UnityEngine;
 public class VillagerStats : MonoBehaviour
 {
     [SerializeField]
+    private string _name;
+    [SerializeField]
     private float _health;
     [SerializeField]
     private float _maxhealth;
@@ -16,7 +18,12 @@ public class VillagerStats : MonoBehaviour
     private float _social;
     [SerializeField]
     private float _maxsocial;
-
+    
+    public string name
+    {
+        get { return _name; }
+        set { }
+    }
     public float health
     {
         get { return _health; }

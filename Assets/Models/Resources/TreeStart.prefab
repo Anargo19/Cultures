@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3941826372767091324}
   - component: {fileID: 3931823919514169940}
   - component: {fileID: 3972799586659927860}
+  - component: {fileID: -637649659882287790}
   m_Layer: 0
   m_Name: TreeStart
   m_TagString: Resource
@@ -98,3 +99,19 @@ CapsuleCollider:
   m_Height: 9.00171
   m_Direction: 1
   m_Center: {x: -0.04, y: 4.16, z: 0.023061633}
+--- !u!208 &-637649659882287790
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3945890938582673642}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 0
+  m_Extents: {x: 1.2160001, y: 4.426, z: 1.2160001}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.003, y: 4.413, z: -0.028}
+  m_TimeToStationary: 0.5

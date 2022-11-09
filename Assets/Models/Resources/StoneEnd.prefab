@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7798562314426617}
   - component: {fileID: 7798562315557433}
   - component: {fileID: 854080707245494290}
+  - component: {fileID: -7727868137796664892}
   m_Layer: 0
   m_Name: StoneEnd
   m_TagString: Resource
@@ -97,3 +98,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.1137662, y: 0.2414516, z: 1.0488367}
   m_Center: {x: -0.017763644, y: 0.017497562, z: 0.05294837}
+--- !u!208 &-7727868137796664892
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7798562317485305}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 0
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
