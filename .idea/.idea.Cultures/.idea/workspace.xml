@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="46b7db60-946e-48a3-a391-96b7d205177b" name="Changes" comment="" />
+    <list default="true" id="46b7db60-946e-48a3-a391-96b7d205177b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Cultures/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Cultures/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourTrees/Civilian.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BehaviourTrees/Civilian.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BehaviourTrees/Extractor_Clay.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BehaviourTrees/Extractor_Clay.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Buildings/FarmStart.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Buildings/FarmStart.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/VillagerJob.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/VillagerJob.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/- Materials/Colors/Emission/55 EMISSION-PURPLE-LPUP.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/- Materials/Colors/Emission/55 EMISSION-PURPLE-LPUP.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,9 +18,6 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Script/BuildingManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/CheckItem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/CheckResource.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/UiManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -93,6 +99,7 @@
       <workItem from="1667852225974" duration="1503000" />
       <workItem from="1667938511373" duration="1676000" />
       <workItem from="1668178270971" duration="1100000" />
+      <workItem from="1668185390702" duration="670000" />
     </task>
     <servers />
   </component>

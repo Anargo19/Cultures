@@ -44,6 +44,15 @@ public class VillagerJob : MonoBehaviour
     {
         
     }
+    
+    public float explosionRadius = 5.0f;
+
+    void OnDrawGizmosSelected()
+    {
+        // Display the explosion radius when selected
+        Gizmos.color = Color.white;
+        Gizmos.DrawWireSphere(transform.position, explosionRadius);
+    }
 
     public void Pickup(string resourceName)
     {
