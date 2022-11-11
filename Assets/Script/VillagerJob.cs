@@ -138,6 +138,7 @@ public class VillagerJob : MonoBehaviour
         tool.gameObject.SetActive(false);
         _resourceScriptable = jobScriptable.resourceNeeded;
         tool = toolParent.GetChild(jobScriptable.toolIndex);
+        GetComponent<Animator>().Play("Idle");
         jobChanged.Invoke();
     }
 

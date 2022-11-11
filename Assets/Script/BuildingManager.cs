@@ -93,7 +93,7 @@ namespace Anargo
                     GameObject final = building.constructionStages[building.constructionStages.Length - 1];
                     Instantiate(final, 
                         new Vector3(transform.position.x, final.transform.position.y, transform.position.z),
-                        Quaternion.identity);
+                        final.transform.rotation);
                     AudioSource.PlayClipAtPoint(jingle, Camera.main.transform.position);
                     Destroy(gameObject);
                     Debug.Log("Built");
