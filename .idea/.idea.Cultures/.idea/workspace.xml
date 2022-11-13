@@ -3,13 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="46b7db60-946e-48a3-a391-96b7d205177b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Cultures/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Cultures/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BehaviourTrees/Civilian.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BehaviourTrees/Civilian.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BehaviourTrees/Extractor_Clay.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BehaviourTrees/Extractor_Clay.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Buildings/FarmStart.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Buildings/FarmStart.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PluginMaster/DesignTools/Editor/PrefabWorldBuilder/Resources/PWBData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PluginMaster/DesignTools/Editor/PrefabWorldBuilder/Resources/PWBData.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Editor/Resources/UndoCompatibleBuffer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Editor/Resources/UndoCompatibleBuffer.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Runtime/Resources/TexturePainterCustomParams.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Polaris - Low Poly Ecosystem/Polaris - Low Poly Terrain Engine/Runtime/Resources/TexturePainterCustomParams.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/VillagerJob.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/VillagerJob.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/- Materials/Colors/Emission/55 EMISSION-PURPLE-LPUP.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/polyperfect/Low Poly Ultimate Pack/- Materials/Colors/Emission/55 EMISSION-PURPLE-LPUP.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UiManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UiManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,6 +101,8 @@
       <workItem from="1667938511373" duration="1676000" />
       <workItem from="1668178270971" duration="1100000" />
       <workItem from="1668185390702" duration="670000" />
+      <workItem from="1668354398418" duration="7000" />
+      <workItem from="1668354476808" duration="2620000" />
     </task>
     <servers />
   </component>

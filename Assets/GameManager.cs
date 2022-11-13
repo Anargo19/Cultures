@@ -6,6 +6,8 @@ using UnityEngine.Events;
 using UnityEngine.InputSystem;
 using static UnityEngine.InputSystem.InputAction;
 
+[System.Serializable]
+public class SelectVillagerEvent : UnityEvent<VillagerStats> {}
 public class GameManager : MonoBehaviour
 {
     public InputActionAsset actions;
@@ -15,7 +17,10 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public BuildingScriptable[] buildingList;
     public GameObject buildingManager;
+    
+    [Header("Events")]
     public UnityEvent leftClick;
+    public SelectVillagerEvent villagerSelectedEvent;
 
     private void OnEnable()
     {
@@ -50,13 +55,17 @@ public class GameManager : MonoBehaviour
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit))
             {
-                if (hit.collider.tag == "Resource")
+                switch (hit.collider.tag)
                 {
-                    Debug.Log("Resource Clicked : " + hit.collider.GetComponentInParent<ResourceBehavior>().GetResourceScriptable().Name);
-                }
-                if (hit.collider.tag == "Storage")
-                {
-                    Debug.Log("Current Stocked : " + hit.collider.GetComponentInParent<FlagBehavior>().GetStorageAmount(hit.collider.transform));
+                    case "Resource":  
+                        Debug.Log("Resource Clicked : " + hit.collider.GetComponentInParent<ResourceBehavior>().GetResourceScriptable().Name);
+                        break;
+                    case "Storage":    
+                        Debug.Log("Current Stocked : " + hit.collider.GetComponentInParent<FlagBehavior>().GetStorageAmount(hit.collider.transform));
+                        break;
+                    case "Villager":
+                        villagerSelectedEvent.Invoke(hit.collider.GetComponent<VillagerStats>());
+                        break;
                 }
             }
 
