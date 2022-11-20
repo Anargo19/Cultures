@@ -17,8 +17,8 @@ public class VillagerJob : MonoBehaviour
         get { return _resourceScriptable; }
         set { }
     }
-    [SerializeField] Transform _flag;
-    public Transform flag
+    [SerializeField] FlagBehavior _flag;
+    public FlagBehavior flag
     {
         get { return _flag; }
         set { }

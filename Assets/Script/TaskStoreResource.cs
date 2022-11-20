@@ -5,11 +5,10 @@ public class TaskStoreResource : ActionTask
 {
 
 	public BBParameter<int> amount;
-	public BBParameter<Transform> flag;
+	public BBParameter<FlagBehavior> flag;
 	protected override void OnExecute()
 	{
-		FlagBehavior flagBehavior = flag.value.GetComponent<FlagBehavior>();
-		flagBehavior.ChangeAmount(amount.value);
+		//flag.value.GetStorageAmount();
 
 		EndAction(true);
 	}

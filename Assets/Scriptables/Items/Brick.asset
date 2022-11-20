@@ -12,5 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 144176bfbf03e3f45b6524f18734c46e, type: 3}
   m_Name: Brick
   m_EditorClassIdentifier: 
-  resourceName: Brick
+  resourceName: 'Stone Brick
+
+'
   sprite: {fileID: 0}
+  model: {fileID: 0}
+  type: 0
