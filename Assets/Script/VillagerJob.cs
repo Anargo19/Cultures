@@ -9,6 +9,7 @@ using UnityEngine.Events;
 public class VillagerJob : MonoBehaviour
 {
     public UnityEvent jobChanged = new UnityEvent();
+    public UnityEvent ChangeStockPile = new UnityEvent();
     GameManager manager;
     [SerializeField] ResourceScriptable _resourceScriptable;
     [SerializeField] private JobScriptable job;
@@ -23,6 +24,8 @@ public class VillagerJob : MonoBehaviour
         get { return _flag; }
         set { }
     }
+
+    public Transform stockPile;
     [SerializeField] Transform pickupTransform;
     [SerializeField] Transform resource;
     [SerializeField] Transform lumber;
@@ -34,10 +37,17 @@ public class VillagerJob : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
     }
+
+    private void StockPileUpdate()
+    {
+        Debug.Log("Update Stock Pile");
+        stockPile = _flag.GetStockPile();
+    }
+
     private void Awake()
     {
+        ChangeStockPile.AddListener(StockPileUpdate);
     }
     // Update is called once per frame
     void Update()
@@ -106,7 +116,7 @@ public class VillagerJob : MonoBehaviour
                 }
                 GetComponent<Animator>().SetBool("isCarrying", false);
                 resource.gameObject.SetActive(false);
-                flag.GetComponent<FlagBehavior>().ChangeAmount(1);
+                flag.ChangeAmount(1);
                 break;
         }
         

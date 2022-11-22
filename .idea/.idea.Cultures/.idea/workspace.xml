@@ -4,21 +4,17 @@
     <list default="true" id="46b7db60-946e-48a3-a391-96b7d205177b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Cultures/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Cultures/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/BehaviourTrees/Extractor_Clay.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BehaviourTrees/Extractor_Clay.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PluginMaster/DesignTools/Editor/PrefabWorldBuilder/Resources/PWBData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PluginMaster/DesignTools/Editor/PrefabWorldBuilder/Resources/PWBData.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/test (1).fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/test (1).fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Buildings/FarmEnd.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Buildings/FarmEnd.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/FlagBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/FlagBehavior.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Scriptables/BuildingScriptable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Scriptables/BuildingScriptable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Scriptables/ItemScriptables.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Scriptables/ItemScriptables.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Scriptables/JobScriptable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Scriptables/JobScriptable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/TaskStoreResource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/TaskStoreResource.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/ScriptableObjectCreator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/ScriptableObjectCreator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/VillagerJob.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/VillagerJob.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scriptables/Items/Brick.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scriptables/Items/Brick.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scriptables/Items/Clay.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scriptables/Items/Clay.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scriptables/Items/Wood.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scriptables/Items/Wood.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkyProfile-564493385819730836.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkyProfile-564493385819730836.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkyProfile-775354616919730836.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SkyProfile-775354616919730836.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptables/Jobs/Extractor_Stone.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scriptables/Jobs/Extractor_Stone.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StonePile5.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StonePile5.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Villager.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Villager.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,6 +110,8 @@
       <workItem from="1668354476808" duration="2620000" />
       <workItem from="1668535361217" duration="10427000" />
       <workItem from="1668716770625" duration="599000" />
+      <workItem from="1669054900748" duration="3418000" />
+      <workItem from="1669134607959" duration="295000" />
     </task>
     <servers />
   </component>

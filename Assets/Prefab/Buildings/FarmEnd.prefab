@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3457519370002203086}
   - component: {fileID: 643798865011762067}
   - component: {fileID: 3779903966466057973}
+  - component: {fileID: -9083765322722423365}
   m_Layer: 0
   m_Name: FarmEnd
   m_TagString: Untagged
@@ -97,3 +98,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 8.836028, y: 8.7308, z: 7.049248}
   m_Center: {x: -1.5486691, y: 2.8612914, z: 3.5321746}
+--- !u!114 &-9083765322722423365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8243001415570123924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 343581b0be3c63847b03893c737de87d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPlaced: 1
+  building: {fileID: 11400000, guid: 76c52307bf251ef4ca566ecef4b3889a, type: 2}
+  jingle: {fileID: 0}

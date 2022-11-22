@@ -12,8 +12,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 021cac356ca8afb4eb819912d5f6624c, type: 3}
   m_Name: Extractor_Stone
   m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: recipes
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[Anargo.RecipeScriptable, Assembly-CSharp],[System.Int32,
+        mscorlib]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.ObjectEqualityComparer`1[[Anargo.RecipeScriptable,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
   name: Stone Gatherer
-  behaviourTree: {fileID: 11400000, guid: 2c178d476c9896846bdce201c76a5b6e, type: 2}
+  behaviourTree: {fileID: 11400000, guid: f97efb68b03927d4dbb40b34ac68cf4d, type: 2}
   jobType: 0
   resourceNeeded: {fileID: 11400000, guid: 68eec5355c5fe8a4fbc690e6bb9b4aea, type: 2}
   toolIndex: 12

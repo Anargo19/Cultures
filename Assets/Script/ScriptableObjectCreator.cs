@@ -7,7 +7,7 @@ using System.IO;
 using System.Linq;
 using UnityEditor;
 using UnityEngine;
-
+#if UNITY_EDITOR
 public class ScriptableObjectCreator : OdinMenuEditorWindow
 {
     static HashSet<Type> scriptableObjectTypes = AssemblyUtilities.GetTypes(AssemblyTypeFlags.CustomTypes)
@@ -133,3 +133,4 @@ public class ScriptableObjectCreator : OdinMenuEditorWindow
         }
     }
 }
+#endif

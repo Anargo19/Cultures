@@ -10,6 +10,7 @@ TagManager:
   - Terrain
   - ConstructionSite
   - Item
+  - StockPile
   layers:
   - Default
   - TransparentFX
