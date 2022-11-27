@@ -3,18 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="46b7db60-946e-48a3-a391-96b7d205177b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Cultures/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Cultures/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BehaviourTrees/Extractor_Clay.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BehaviourTrees/Extractor_Clay.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/test (1).fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/test (1).fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Buildings/FarmEnd.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Buildings/FarmEnd.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Buildings/Building.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Buildings/Building.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/FlagBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/FlagBehavior.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/ScriptableObjectCreator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/ScriptableObjectCreator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/VillagerJob.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/VillagerJob.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scriptables/Jobs/Extractor_Stone.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scriptables/Jobs/Extractor_Stone.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StonePile5.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StonePile5.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Villager.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Villager.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptables/Buildings/Stonemason Workshop.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scriptables/Buildings/Stonemason Workshop.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,6 +104,7 @@
       <workItem from="1668716770625" duration="599000" />
       <workItem from="1669054900748" duration="3418000" />
       <workItem from="1669134607959" duration="295000" />
+      <workItem from="1669575595198" duration="624000" />
     </task>
     <servers />
   </component>

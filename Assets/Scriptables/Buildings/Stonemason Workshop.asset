@@ -20,7 +20,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d1062b91cbb7db440be91a06e01236da, type: 2}
   - {fileID: 11400000, guid: a3289e3dcf441cb4eb52d21ae8576bf9, type: 2}
   constructionStages:
-  - {fileID: 0}
+  - {fileID: 1687293076960028136, guid: 57fe32f90ce5c7d48a780e5358ce07e4, type: 3}
+  - {fileID: 177137749877077860, guid: 9a541dbeee88bd444bbfe25eb4986cca, type: 3}
   workerType:
   - {fileID: 11400000, guid: 43d4a255473cbd0478ddd2b0196c62ea, type: 2}
   - {fileID: 11400000, guid: 43d4a255473cbd0478ddd2b0196c62ea, type: 2}
