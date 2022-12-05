@@ -12,9 +12,9 @@ public class ResourceBehavior : MonoBehaviour
     void Start()
     {
         Debug.Log(transform.childCount);
-        if (transform.childCount > 0)
-            Destroy(transform.GetChild(0).gameObject);
-        GameObject newResource = Instantiate(resource.baseModel, transform);
+        //if (transform.childCount > 0)
+        //    Destroy(transform.GetChild(0).gameObject);
+        //GameObject newResource = Instantiate(resource.baseModel, transform);
         _amount = resource.amount;
         _position = transform.position;
 
@@ -42,15 +42,18 @@ public class ResourceBehavior : MonoBehaviour
         switch (percentage)
         {
             case > 75:
-                Destroy(transform.GetChild(0).gameObject);
+                if(transform.childCount>0)
+                    Destroy(transform.GetChild(0).gameObject);
                 Instantiate(resource.baseModel, transform);
                 break;
             case < 75 and > 30:
-                Destroy(transform.GetChild(0).gameObject);
+                if (transform.childCount > 0)
+                    Destroy(transform.GetChild(0).gameObject);
                 Instantiate(resource.middleModel, transform);
                 break;
             case <= 35 and > 0:
-                Destroy(transform.GetChild(0).gameObject);
+                if (transform.childCount > 0)
+                    Destroy(transform.GetChild(0).gameObject);
                 Instantiate(resource.endModel, transform);
                 break;
             case <= 0:

@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6905071774268401783}
+  - component: {fileID: 251062056122722369}
   m_Layer: 0
   m_Name: ClayPile5
   m_TagString: Untagged
@@ -36,6 +37,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &251062056122722369
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3649036817524240453}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.3000718, y: 0.45853466, z: 1}
+  m_Center: {x: -0.66558844, y: 0.043194674, z: 0}
 --- !u!1001 &507572927975770270
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50,6 +64,10 @@ PrefabInstance:
     - target: {fileID: 4703623717867171185, guid: b4df43b3040a92c4c810c9a7f3a9659a, type: 3}
       propertyPath: m_Name
       value: ClayDrop (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4703623717867171185, guid: b4df43b3040a92c4c810c9a7f3a9659a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4703623717867270481, guid: b4df43b3040a92c4c810c9a7f3a9659a, type: 3}
       propertyPath: m_RootOrder
@@ -117,6 +135,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ClayDrop
       objectReference: {fileID: 0}
+    - target: {fileID: 4703623717867171185, guid: b4df43b3040a92c4c810c9a7f3a9659a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4703623717867270481, guid: b4df43b3040a92c4c810c9a7f3a9659a, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -182,6 +204,10 @@ PrefabInstance:
     - target: {fileID: 4703623717867171185, guid: b4df43b3040a92c4c810c9a7f3a9659a, type: 3}
       propertyPath: m_Name
       value: ClayDrop (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4703623717867171185, guid: b4df43b3040a92c4c810c9a7f3a9659a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4703623717867270481, guid: b4df43b3040a92c4c810c9a7f3a9659a, type: 3}
       propertyPath: m_RootOrder
@@ -249,6 +275,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ClayDrop (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4703623717867171185, guid: b4df43b3040a92c4c810c9a7f3a9659a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4703623717867270481, guid: b4df43b3040a92c4c810c9a7f3a9659a, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -314,6 +344,10 @@ PrefabInstance:
     - target: {fileID: 4703623717867171185, guid: b4df43b3040a92c4c810c9a7f3a9659a, type: 3}
       propertyPath: m_Name
       value: ClayDrop (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4703623717867171185, guid: b4df43b3040a92c4c810c9a7f3a9659a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4703623717867270481, guid: b4df43b3040a92c4c810c9a7f3a9659a, type: 3}
       propertyPath: m_RootOrder

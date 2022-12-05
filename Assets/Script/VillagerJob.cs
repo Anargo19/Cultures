@@ -93,7 +93,7 @@ public class VillagerJob : MonoBehaviour
             return;
         }
         lumber.gameObject.SetActive(true);
-        Transform lumberObj = GetComponent<BehaviourTreeOwner>().graph.blackboard.GetVariable<Transform>("resourcePos").value;
+        Transform lumberObj = GetComponent<BehaviourTreeOwner>().graph.blackboard.GetVariable<Transform>("resourceDrop").value;
         
         if (lumberObj != null)
             Destroy(lumberObj.gameObject);
