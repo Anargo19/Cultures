@@ -55,17 +55,10 @@ public class GameManager : MonoBehaviour
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit))
             {
-                switch (hit.collider.tag)
+                IInteractable interactable = hit.collider.GetComponent<IInteractable>();
+                if (interactable != null)
                 {
-                    case "Resource":  
-                        Debug.Log("Resource Clicked : " + hit.collider.GetComponentInParent<ResourceBehavior>().GetResourceScriptable().Name);
-                        break;
-                    case "Storage":    
-                        Debug.Log("Current Stocked : " + hit.collider.GetComponentInParent<FlagBehavior>().GetStorageAmount(hit.collider.transform));
-                        break;
-                    case "Villager":
-                        villagerSelectedEvent.Invoke(hit.collider.GetComponent<VillagerStats>());
-                        break;
+                   interactable.Interact();
                 }
             }
 

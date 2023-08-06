@@ -11,10 +11,7 @@ public class ResourceBehavior : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log(transform.childCount);
-        //if (transform.childCount > 0)
-        //    Destroy(transform.GetChild(0).gameObject);
-        //GameObject newResource = Instantiate(resource.baseModel, transform);
+        
         _amount = resource.amount;
         _position = transform.position;
 
@@ -44,7 +41,7 @@ public class ResourceBehavior : MonoBehaviour
             case > 75:
                 if(transform.childCount>0)
                     Destroy(transform.GetChild(0).gameObject);
-                Instantiate(resource.baseModel, transform);
+                Instantiate(resource.model, transform);
                 break;
             case < 75 and > 30:
                 if (transform.childCount > 0)

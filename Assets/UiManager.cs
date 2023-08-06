@@ -8,6 +8,15 @@ namespace Anargo
 {
     public class UiManager : MonoBehaviour
     {
+        public static UiManager instance;
+        private void Awake()
+        {
+            if (instance != null)
+                Destroy(this);
+            instance = this;
+        }
+
+
         private GameManager _manager;
         public Camera follower;
         public GameObject villager;
@@ -24,8 +33,17 @@ namespace Anargo
         private VillagerStats _stats;
 
         public Transform VillagerPanel => _villagerPanel;
-        
-        
+
+
+        [Header("BuildingPanel")]
+
+
+        [SerializeField] private GameObject _buildingPanel;
+        public GameObject BuildingPanel => _buildingPanel;
+        [SerializeField] private RawImage _buildingFollow;
+        public RawImage BuildingFollow => _buildingFollow;
+
+
         // Start is called before the first frame update
         void Start()
         {

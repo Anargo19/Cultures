@@ -4,11 +4,9 @@ using UnityEngine;
 
 
 [CreateAssetMenu(fileName = "Resource", menuName = "Scriptable/Resource")]
-public class ResourceScriptable : ScriptableObject
+public class ResourceScriptable : ItemScriptables
 {
-    public string Name;
     public int amount;
-    public GameObject baseModel;
     public GameObject middleModel;
     public GameObject endModel;
     public ItemScriptables itemDrop;

@@ -25,7 +25,6 @@ public class TaskDetectCollision : ActionTask
 				}
 			}
 		}
-		Debug.Log(hits.Length);
 		EndAction(true);
 	}
 }

@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35004aa2969557e4ea6cb49f4ed072d5, type: 3}
   m_Name: Clay
   m_EditorClassIdentifier: 
-  Name: Clay
+  resourceName: Clay
+  sprite: {fileID: 0}
+  model: {fileID: 7635989752227727884, guid: a401f0399bfafb94d97a6faf36e33234, type: 3}
+  type: 0
   amount: 10
-  baseModel: {fileID: 7635989752227727884, guid: a401f0399bfafb94d97a6faf36e33234, type: 3}
   middleModel: {fileID: 8695332331886180073, guid: 1fb31df93b0f63d49b66eb3125b9a12d, type: 3}
   endModel: {fileID: 8377684584970784234, guid: eb58b5fa4a98fdd449c782bbe633eed6, type: 3}
   itemDrop: {fileID: 11400000, guid: a3289e3dcf441cb4eb52d21ae8576bf9, type: 2}

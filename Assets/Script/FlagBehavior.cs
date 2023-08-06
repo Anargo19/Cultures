@@ -1,90 +1,73 @@
+using Anargo;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
-public class FlagBehavior : MonoBehaviour
+public class FlagBehavior : MonoBehaviour, IStorage
 {
     [SerializeField] VillagerJob _villager;
-    [SerializeField] Transform currentStoragePlace;
-    int _storageIndex = 0;
+    ResourceScriptable _resource;
+    public Transform currentStoragePlace;
+    //int _storageIndex = 0;
     [SerializeField] BoxCollider _resourcePrefab;
     [SerializeField] int _amount;
-    [SerializeField] int _maxAmount = 5;
     // Start is called before the first frame update
     void Start()
     {
         _villager.jobChanged.AddListener(ChangeResource);
-        if (!currentStoragePlace)
-        {
-            Vector3 pos = SpawnObject();
-            currentStoragePlace = Instantiate(_resourcePrefab.transform, pos, Quaternion.identity);
-            _amount = 0;
-            _villager.ChangeStockPile.Invoke();
-        }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
         
     }
 
-    public void ChangeAmount(int amount)
-    {
-        
-        bool setActive = amount > 0;
-        if (setActive && _amount == _maxAmount)
-        {
-            Vector3 pos = SpawnObject();
-            currentStoragePlace = Instantiate(_resourcePrefab.transform, pos, Quaternion.identity);
-            _amount = 0;
-            _villager.ChangeStockPile.Invoke();
-        }
-        Debug.Log(currentStoragePlace.transform);
-        Debug.Log(currentStoragePlace.transform.GetChild(_amount));
-        currentStoragePlace.transform.GetChild(_amount).gameObject.SetActive(setActive);
-        _amount += amount;
-        
-
-    }
-
-    public int GetStorageAmount(Transform storage)
-    {
-        return _amount;
-    }
-    public Transform GetStockPile()
-    {
-        return currentStoragePlace;
-    }
 
     void ChangeResource()
     {
+        if (_resource == _villager.resourceScriptable)
+            return;
+        _resource= _villager.resourceScriptable;
+        currentStoragePlace = Instantiate(_resourcePrefab, transform).transform;
+        currentStoragePlace.position = transform.position;
+        _villager.ChangeStockPile.Invoke();
+            
     }
     
-    private Vector3 SpawnObject()
+   
+
+
+    public void RemoveItem(ItemScriptables item)
     {
-        float radius = Mathf.Max(_resourcePrefab.size.x, _resourcePrefab.size.z) / 2;
-        bool isFree = false;
-        Vector3 pos = Vector3.zero;
-        while (!isFree)
-        {
-            pos = new Vector3(transform.position.x + Random.Range(-3, 3), 0, transform.position.z + Random.Range(-3, 3));
-            Debug.Log(pos);
-            int layerMask = 1 << 3; 
-            layerMask = ~layerMask;
+        if(_amount <= 0) return;
 
-            Collider[] hitColliders = Physics.OverlapSphere(pos, radius, layerMask);
-            if (hitColliders.Length > 0)
-            {
-                isFree = false;
+        if (item != _resource) return;
 
-            }
-            else
-                isFree = true;
+        _amount--;
+        if (_amount > 5) return;
+        currentStoragePlace.GetChild(_amount - 1).gameObject.SetActive(true);
+    }
 
-            if (Vector3.Distance(transform.position, pos) < 0.5f)
-                isFree = false;
-        }
-        return pos;
+
+    public int GetAmount(ItemScriptables item)
+    {
+        if (item != _resource) return 0;
+
+        return _amount;
+    }
+
+
+    public void Store(ItemScriptables item)
+    {
+
+        if (item != _resource) return;
+
+        _amount++;
+
+        if (_amount > 5) return;
+        currentStoragePlace.GetChild(_amount-1).gameObject.SetActive(true);
+
+    }
+
+    public int GetStorage()
+    {
+        return _amount;
     }
 }

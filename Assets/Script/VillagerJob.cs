@@ -37,12 +37,13 @@ public class VillagerJob : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        jobChanged.Invoke();
     }
 
     private void StockPileUpdate()
     {
         Debug.Log("Update Stock Pile");
-        stockPile = _flag.GetStockPile();
+        stockPile = _flag.currentStoragePlace;
     }
 
     private void Awake()
@@ -116,7 +117,7 @@ public class VillagerJob : MonoBehaviour
                 }
                 GetComponent<Animator>().SetBool("isCarrying", false);
                 resource.gameObject.SetActive(false);
-                flag.ChangeAmount(1);
+                flag.Store(_resourceScriptable);
                 break;
         }
         

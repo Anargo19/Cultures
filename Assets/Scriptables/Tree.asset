@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35004aa2969557e4ea6cb49f4ed072d5, type: 3}
   m_Name: Tree
   m_EditorClassIdentifier: 
-  Name: Tree
+  resourceName: Tree
+  sprite: {fileID: 0}
+  model: {fileID: 3945890938582673642, guid: 235e6058c9a2d2f4684c36ee8a41494f, type: 3}
+  type: 0
   amount: 10
-  baseModel: {fileID: 3945890938582673642, guid: 235e6058c9a2d2f4684c36ee8a41494f, type: 3}
   middleModel: {fileID: 3945890938582673642, guid: 235e6058c9a2d2f4684c36ee8a41494f, type: 3}
   endModel: {fileID: 3945890938582673642, guid: 235e6058c9a2d2f4684c36ee8a41494f, type: 3}
   itemDrop: {fileID: 11400000, guid: d1062b91cbb7db440be91a06e01236da, type: 2}
