@@ -24,6 +24,7 @@ namespace Anargo
         [Header("VillagerPanel")] 
         [SerializeField] private Transform _villagerPanel;
         [SerializeField] private TMP_InputField _villagerName;
+        public TMP_InputField VillagerName => _villagerName;
         [SerializeField] private Image _villagerHealth;
         [SerializeField] private Image _villagerHunger;
         [SerializeField] private Image _villagerSleep;

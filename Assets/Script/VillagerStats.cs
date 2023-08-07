@@ -1,8 +1,9 @@
+using Anargo;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class VillagerStats : MonoBehaviour
+public class VillagerStats : MonoBehaviour, IInteractable
 {
     [SerializeField]
     private string _name;
@@ -19,7 +20,7 @@ public class VillagerStats : MonoBehaviour
     [SerializeField]
     private float _maxsocial;
     
-    public string name
+    public string Name
     {
         get { return _name; }
         set { }
@@ -86,5 +87,11 @@ public class VillagerStats : MonoBehaviour
     public void ChangeSocialAmount(int amount)
     {
         _social += amount;
+    }
+
+    public void Interact()
+    {
+        UiManager.instance.VillagerPanel.gameObject.SetActive(true);
+        UiManager.instance.VillagerName.text = _name;
     }
 }
